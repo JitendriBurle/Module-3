@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Management App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar Form -->
+    <aside class="sidebar">
+        <h2>Add Book</h2>
+
+        <form id="bookForm">
+            <label>Title</label>
+            <input type="text" id="title">
+
+            <label>Author</label>
+            <input type="text" id="author">
+
+            <label>Price</label>
+            <input type="number" id="price">
+
+            <label>Image URL</label>
+            <input type="text" id="image">
+
+            <button type="submit">Add Book</button>
+        </form>
+    </aside>
+
+    <!-- Book Cards -->
+    <main class="main">
+        <h1>Books</h1>
+        <div id="bookList" class="grid"></div>
+    </main>
+
+</div>
+
+</body>
+</html>
